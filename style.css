@@ -17,7 +17,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: #FFFDD0; /* soft yellow */
+  background-color: #daf6f6; /* soft blue */
   display: flex;
   justify-content: center;
   align-items: flex-start; /* top alignment */
@@ -122,6 +122,7 @@ button{
     text-align: left;
     font-family: 'Times New Roman', Times, serif;
 }
+
 
 
 
