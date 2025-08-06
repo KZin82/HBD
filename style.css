@@ -15,11 +15,13 @@
 
 body {
   margin: 0;
-  height: 100vh;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #e0fafa; /* soft blue */
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #e0fafa; /* soft blue */
+  align-items: flex-start; /* top alignment */
+  min-height: 100vh; /* content can expand */
 }
 
 .hidden{
@@ -58,18 +60,16 @@ button{
     transition: background-color 0.3s case;
 }
 
-.letter{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 24px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    background: white;
-    padding: 40px;
-    margin-top: 10px;
-    width: 450px;
-    height: 700px;
+.letter {
+  position: relative;
+  border-radius: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background: white;
+  padding: 40px;
+  margin-top: 10px;
+  width: 450px;
+  max-height: 90vh; /* screen height limit */
+  overflow-y: auto; /* enable scrolling if needed */
 }
 .large-font{
     display: block;
@@ -103,3 +103,4 @@ button{
     text-align: left;
     font-family: 'Times New Roman', Times, serif;
 }
+
