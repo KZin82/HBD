@@ -5,7 +5,7 @@ window.checkPassword = function () {
     document.getElementById("cakeScreen").classList.remove("hidden");
   }
   else {
-    alert("Oops! Wrong password 😅 pw=2191994 🧡");
+    alert("Oops! Wrong password 😅 pw=2191994");
   }
 } 
 function nextStep(){
@@ -15,4 +15,5 @@ function nextStep(){
 function openLetter(){
     alert("Happy Birthday!")
 }
+
 
